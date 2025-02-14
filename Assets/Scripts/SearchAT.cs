@@ -11,6 +11,7 @@ namespace NodeCanvas.Tasks.Actions {
 		Blackboard agentBB;
 		float searchRadius;
 		float baseSearchRadius;
+        public BBParameter<float> minNectarDetect;
 
         public Color drawColour;
         public int numberOfScanCirclePoints;
@@ -52,7 +53,7 @@ namespace NodeCanvas.Tasks.Actions {
 
                 float nectarVal = flowerBB.GetVariableValue<float>("nectar");
 
-                if (nectarVal > 0)
+                if (nectarVal > minNectarDetect.value)
                 {
 					Debug.Log("found FLOWER!");
                     agentBB.SetVariableValue("searchRadius", baseSearchRadius);
