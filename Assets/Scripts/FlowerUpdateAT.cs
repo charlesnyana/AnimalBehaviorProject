@@ -27,6 +27,8 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called once per frame while the action is active.
 		protected override void OnUpdate() {
+			if (nectar.value < 0) nectar.value = 0;
+
 			if (nectar.value <= nectarMax.value)
 			{
 				nectar.value += nectarReplenishRate.value * Time.deltaTime;

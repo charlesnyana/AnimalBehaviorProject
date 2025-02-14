@@ -2,19 +2,21 @@ using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using static UnityEngine.GraphicsBuffer;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 namespace NodeCanvas.Tasks.Actions {
 
 	public class BeelineAT : ActionTask {
 		Blackboard agentBB;
-		public BBParameter<Transform> flowerTarget;
+
+        public BBParameter<Transform> flowerTarget;
         public BBParameter<float> speed;
         public BBParameter<float> arrivalDistance;
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
-			agentBB = agent.GetComponent<Blackboard>();
+            agentBB = agent.GetComponent<Blackboard>();
 			return null;
 		}
 

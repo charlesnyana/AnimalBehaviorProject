@@ -122,59 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &156487377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 156487379}
-  - component: {fileID: 156487378}
-  m_Layer: 0
-  m_Name: Bee NavRef
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!65 &156487378
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156487377}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &156487379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156487377}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.815, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &284532317
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,13 +346,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610475735}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0943896, y: 0.17284873, z: 0.016643433, w: 0.98027396}
-  m_LocalPosition: {x: 0, y: 0, z: -1.227}
+  m_LocalRotation: {x: -0.12205654, y: 0.5604624, z: -0.18913917, w: 0.79700094}
+  m_LocalPosition: {x: -0.000000003725305, y: 0.00000010430814, z: -1.227}
   m_LocalScale: {x: 0.0921726, y: 1, z: 0.21351}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 325055695}
-  m_LocalEulerAnglesHint: {x: -11, y: 20, z: 0}
+  m_LocalEulerAnglesHint: {x: 1, y: 70, z: -26}
 --- !u!64 &610475737
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -448,7 +395,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 02933311a6d82284e97202029891902c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -650,7 +597,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 159394ece62bdf74cb0dbe955c6397d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -745,7 +692,7 @@ MonoBehaviour:
   _parentBlackboard: {fileID: 0}
   _serializedBlackboard: '{"_variables":{"nectar":{"_value":100.0,"_name":"nectar","_id":"fed9ec04-691c-4b77-bd7f-224bd5b8d95a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"nectarReplenishRate":{"_value":1.0,"_name":"nectarReplenishRate","_id":"d6901df1-89f7-455a-854d-d863c2765e72","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"maxNectar":{"_value":120.0,"_name":"maxNectar","_id":"98776352-0317-4fd1-9725-53e31ba00920","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"maxNectar":{"_value":150.0,"_name":"maxNectar","_id":"98776352-0317-4fd1-9725-53e31ba00920","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences: []
   _serializedVariables:
@@ -755,7 +702,7 @@ MonoBehaviour:
   - _json: '{"_value":1.0,"_name":"nectarReplenishRate","_id":"d6901df1-89f7-455a-854d-d863c2765e72","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":120.0,"_name":"maxNectar","_id":"98776352-0317-4fd1-9725-53e31ba00920","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":150.0,"_name":"maxNectar","_id":"98776352-0317-4fd1-9725-53e31ba00920","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!65 &825859299
@@ -996,7 +943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 53500dc8e20f4c348965a473aab1242c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1036,7 +983,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.82, y: 10.12, z: 11.77}
-  m_LocalScale: {x: 7.5868216, y: 10.849924, z: 7.9863772}
+  m_LocalScale: {x: 7.5868216, y: 10.45336, z: 7.9863772}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1053,6 +1000,7 @@ GameObject:
   - component: {fileID: 1381061633}
   - component: {fileID: 1381061635}
   - component: {fileID: 1381061634}
+  - component: {fileID: 1381061636}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -1113,7 +1061,7 @@ MonoBehaviour:
   _serializedBlackboard: '{"_variables":{"searchRadius":{"_value":6.0,"_name":"searchRadius","_id":"eb12c72f-fccd-4ac0-a0b8-67475d4e2299","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"initialSearchRadius":{"_value":2.0,"_name":"initialSearchRadius","_id":"5c135554-8729-4743-85ff-d1521f8d298c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"nectaredFlower":{"_name":"nectaredFlower","_id":"ec13054f-73ae-473a-8d4f-7cd21a1ee963","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"speed":{"_value":10.0,"_name":"speed","_id":"17451543-ef7d-41fe-a772-afda3e090d47","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"speed":{"_value":20.0,"_name":"speed","_id":"17451543-ef7d-41fe-a772-afda3e090d47","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"arrivalDistance":{"_value":0.2,"_name":"arrivalDistance","_id":"4decef38-89ae-434e-9b8c-1fd11ba2072a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"beehiveTransform":{"_value":1,"_name":"beehiveTransform","_id":"0874b50c-4f49-4e8e-87b9-861657bbe6e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
     UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"skinnyBeeSize":{"_value":1.0,"_name":"skinnyBeeSize","_id":"199482bb-3b29-491a-b7b5-179620dd2ed4","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -1121,7 +1069,7 @@ MonoBehaviour:
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"nectarCarried":{"_name":"nectarCarried","_id":"902520e8-6dc5-4fa1-a08f-4b6754d05568","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"maxNectar":{"_value":100.0,"_name":"maxNectar","_id":"f309554c-3565-4288-9ed3-fec00144c786","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"nectarGainSpeed":{"_value":15.0,"_name":"nectarGainSpeed","_id":"932353cf-0b40-4397-bff7-b0c5d2184e4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"minNectarDetect":{"_value":10.0,"_name":"minNectarDetect","_id":"4ae5d26f-e410-4b6f-8ca8-a8978a702b4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"minNectarDetect":{"_value":95.0,"_name":"minNectarDetect","_id":"4ae5d26f-e410-4b6f-8ca8-a8978a702b4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
@@ -1136,7 +1084,7 @@ MonoBehaviour:
   - _json: '{"_name":"nectaredFlower","_id":"ec13054f-73ae-473a-8d4f-7cd21a1ee963","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
     _references: []
-  - _json: '{"_value":10.0,"_name":"speed","_id":"17451543-ef7d-41fe-a772-afda3e090d47","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":20.0,"_name":"speed","_id":"17451543-ef7d-41fe-a772-afda3e090d47","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
   - _json: '{"_value":0.2,"_name":"arrivalDistance","_id":"4decef38-89ae-434e-9b8c-1fd11ba2072a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
@@ -1162,7 +1110,7 @@ MonoBehaviour:
   - _json: '{"_value":15.0,"_name":"nectarGainSpeed","_id":"932353cf-0b40-4397-bff7-b0c5d2184e4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
-  - _json: '{"_value":10.0,"_name":"minNectarDetect","_id":"4ae5d26f-e410-4b6f-8ca8-a8978a702b4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+  - _json: '{"_value":95.0,"_name":"minNectarDetect","_id":"4ae5d26f-e410-4b6f-8ca8-a8978a702b4b","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
     _references: []
 --- !u!114 &1381061635
@@ -1194,6 +1142,28 @@ MonoBehaviour:
   _updateMode: 0
   _graph: {fileID: 11400000, guid: 7362faa493398854e96f69d1bbb10f1b, type: 2}
   _blackboard: {fileID: 1381061634}
+--- !u!195 &1381061636
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381061631}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 6.84
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1580027904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,13 +1191,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580027904}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0943896, y: -0.17284882, z: 0.01664344, w: 0.98027396}
-  m_LocalPosition: {x: 0, y: 0, z: 1.118}
+  m_LocalRotation: {x: 0.09933732, y: -0.5896486, z: -0.25341564, w: 0.7604124}
+  m_LocalPosition: {x: -0.000000003725305, y: 0.00000010430814, z: 1.1179998}
   m_LocalScale: {x: 0.0921726, y: 1, z: 0.21351}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 325055695}
-  m_LocalEulerAnglesHint: {x: 11, y: -20, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.498, y: -73.258, z: -30.539}
 --- !u!64 &1580027906
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1270,7 +1240,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 02933311a6d82284e97202029891902c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1362,7 +1332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 70199fc9a609006438059080dd660928, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1425,7 +1395,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -1773,7 +1743,6 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 1381061632}
-  - {fileID: 156487379}
   - {fileID: 1616762990}
   - {fileID: 284532322}
   - {fileID: 825859302}

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: Flower
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Start","_position":{"x":470.8134,"y":436.5875},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"nectar":{"_name":"nectar","_targetVariableID":"fed9ec04-691c-4b77-bd7f-224bd5b8d95a"},"nectarReplenishRate":{"_name":"nectarReplenishRate","_targetVariableID":"d6901df1-89f7-455a-854d-d863c2765e72"},"nectarMax":{"_name":"maxNectar","_targetVariableID":"98776352-0317-4fd1-9725-53e31ba00920"},"$type":"NodeCanvas.Tasks.Actions.FlowerUpdateAT"}]},"_position":{"x":445.3521,"y":269.674},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Start","_position":{"x":470.8134,"y":436.5875},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"nectar":{"_name":"nectar","_targetVariableID":"fed9ec04-691c-4b77-bd7f-224bd5b8d95a"},"nectarReplenishRate":{"_name":"nectarReplenishRate","_targetVariableID":"d6901df1-89f7-455a-854d-d863c2765e72"},"nectarMax":{"_name":"maxNectar","_targetVariableID":"98776352-0317-4fd1-9725-53e31ba00920"},"$type":"NodeCanvas.Tasks.Actions.FlowerUpdateAT"}]},"_position":{"x":441.1086,"y":269.674},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences: []
   _graphSource:
     _version: 3.31
     _category: 
     _comments: 
-    _translation: {x: 92.15688, y: 77.35307}
+    _translation: {x: -35, y: 64}
     _zoomFactor: 0.7069533
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}

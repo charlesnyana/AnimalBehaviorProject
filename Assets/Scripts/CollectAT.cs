@@ -15,6 +15,8 @@ namespace NodeCanvas.Tasks.Actions {
         float nectarRatio;
 		public BBParameter<float> nectarGainSpeed;
 
+		Animator beeAnimator;
+
 
         float sizeFactor;
 		Vector3 minSize;
@@ -28,6 +30,7 @@ namespace NodeCanvas.Tasks.Actions {
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
+			beeAnimator = agent.GetComponent<Animator>();
 			return null;
 		}
 
@@ -38,6 +41,8 @@ namespace NodeCanvas.Tasks.Actions {
 			agentBB = agent.GetComponent<Blackboard>();
 			flowerBB = flowerTransform.value.GetComponent<Blackboard>();
 			flowerNectar = flowerBB.GetVariableValue<float>("nectar");
+
+
             beeSize = Vector3.one;
 			minSize = beeSize * skinnyBeeSize.value;
 			fullSize = beeSize * chunkyBeeSize.value;
