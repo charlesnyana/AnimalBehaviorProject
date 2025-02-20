@@ -12,6 +12,7 @@ namespace NodeCanvas.Tasks.Actions {
 		float searchRadius;
 		float baseSearchRadius;
         public BBParameter<float> minNectarDetect;
+        public BBParameter<Vector3> targetPos;
 
         public Color drawColour;
         public int numberOfScanCirclePoints;
@@ -58,6 +59,10 @@ namespace NodeCanvas.Tasks.Actions {
 					Debug.Log("found FLOWER!");
                     agentBB.SetVariableValue("searchRadius", baseSearchRadius);
                     targetTransform.value = flowerBB.GetComponent<Transform>();
+
+                    Vector3 directionToTarget = targetTransform.value.position;
+
+                    targetPos.value = directionToTarget;
                     EndAction(true);
                 }
             }

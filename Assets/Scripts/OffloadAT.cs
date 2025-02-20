@@ -42,7 +42,7 @@ namespace NodeCanvas.Tasks.Actions {
 
             sizeFactor = Mathf.Lerp(skinnyBeeSize.value, chunkyBeeSize.value, nectarRatio);
 
-            agent.transform.localScale = beeSize * sizeFactor;
+            agent.transform.GetChild(0).localScale = beeSize * sizeFactor;
 
 
             if (nectarCarried.value <= 0f)
@@ -54,7 +54,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-            agent.transform.localScale = minSize;
+            agent.transform.GetChild(0).localScale = minSize;
         }
 
 		//Called when the task is paused.

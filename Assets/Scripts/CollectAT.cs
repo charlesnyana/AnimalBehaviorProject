@@ -27,6 +27,9 @@ namespace NodeCanvas.Tasks.Actions {
 		Blackboard flowerBB;
        float flowerNectar;
 
+        public BBParameter<Vector3> targetPos;
+        public BBParameter<Transform> hiveTarget;
+
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
@@ -57,7 +60,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 			sizeFactor = Mathf.Lerp(skinnyBeeSize.value, chunkyBeeSize.value, nectarRatio);
 
-            agent.transform.localScale = beeSize*sizeFactor;
+            agent.transform.GetChild(0).localScale = beeSize*sizeFactor;
 
 			flowerBB.SetVariableValue("nectar",flowerNectar);
             
@@ -65,14 +68,15 @@ namespace NodeCanvas.Tasks.Actions {
 			if (nectarCarried.value >= maxNectar.value)
 			{
 				nectarCarried.value = maxNectar.value;
-				EndAction(true);
+                
+                EndAction(true);
 			}
         }
 
 		//Called when the task is disabled.
 		protected override void OnStop() {
-			agent.transform.localScale = fullSize;
-		}
+			agent.transform.GetChild(0).localScale = fullSize;
+        }
 
 		//Called when the task is paused.
 		protected override void OnPause() {

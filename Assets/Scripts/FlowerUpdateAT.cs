@@ -11,10 +11,12 @@ namespace NodeCanvas.Tasks.Actions {
 		public BBParameter<float> nectar;
 		public BBParameter<float> nectarReplenishRate;
         public BBParameter<float> nectarMax;
+		Transform nectarObject;
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
         protected override string OnInit() {
 			agentBB = agent.GetComponent<Blackboard>();
+			nectarObject = agent.transform.GetChild(0);
 			return null;
 		}
 
@@ -36,6 +38,8 @@ namespace NodeCanvas.Tasks.Actions {
 			{
 				nectar.value = nectarMax.value;
 			}
+
+			nectarObject.localScale = (Vector3.one * 0.9f) * (nectar.value / nectarMax.value);
 			
 		}
 
